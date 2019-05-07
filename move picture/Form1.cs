@@ -17,7 +17,7 @@ namespace move_picture
             InitializeComponent();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X + 30, pictureBox1.Location.Y);
             await Task.Delay(500);
@@ -27,11 +27,15 @@ namespace move_picture
             await Task.Delay(500);
             pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 30);
             await Task.Delay(500);
+
         }
-        private async void button2_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X + 30, pictureBox1.Location.Y);
             await Task.Delay(500);
             pictureBox1.Location = new Point(pictureBox1.Location.X - 30, pictureBox1.Location.Y);
             await Task.Delay(500);
+        }
+    }
+}
             

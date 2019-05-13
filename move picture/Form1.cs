@@ -36,6 +36,11 @@ namespace move_picture
             pictureBox1.Location = new Point(pictureBox1.Location.X - 30, pictureBox1.Location.Y);
             await Task.Delay(500);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
             
